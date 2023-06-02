@@ -1,0 +1,7 @@
+@use './styles/variables' as *;
+@use './styles/globals' as *;
+
+body {
+  background-color: $gray-black;
+  color: #FFFFFF;
+}
