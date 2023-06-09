@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+
+    &__li {
+        display: inline-flex;
+        margin: 0 1rem;
+    }
+}

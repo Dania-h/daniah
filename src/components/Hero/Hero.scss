@@ -1,4 +1,18 @@
-h1 {
-    font-size: 40px;
-    font-weight: 200;
+.hero {
+
+    &__div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__name {
+        font-size: 2.25rem;
+        font-weight: 300;
+    }
+
+    &__portrait {
+        border-radius: 50%;
+        height: 10rem;
+    }
 }
