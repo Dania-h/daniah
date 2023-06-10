@@ -7,7 +7,7 @@ function Hero() {
     <article className="hero">
       <div className="hero__div">
         <h1 className="hero__name">DANIA HERNANDEZ</h1>
-        <h2 className="hero__subheader">FULL STACK SOFTWARE ENGINEER</h2>
+        <h3 className="hero__subheader">FULL STACK SOFTWARE ENGINEER</h3>
         <p className="hero__text">Curious, creative, detailed</p>
       </div>
       <img className="hero__portrait" src={portrait} alt="portrait of Dania" />
