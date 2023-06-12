@@ -2,6 +2,7 @@ import "./Skills.scss";
 import reactLogo from "../../assets/icons/react-2.svg";
 import html from "../../assets/icons/w3_html5-icon.svg";
 import css from "../../assets/icons/icons8-css-logo.svg";
+import sass from "../../assets/icons/sass-1.svg";
 import javascript from "../../assets/icons/logo-javascript.svg";
 import node from "../../assets/icons/nodejs-icon.svg";
 import git from "../../assets/icons/Git-Icon-1788C.svg";
@@ -26,21 +27,26 @@ function Skills() {
     },
     {
       id: "4",
+      text: "SASS",
+      logo: sass,
+    },
+    {
+      id: "5",
       text: "Javascript",
       logo: javascript,
     },
     {
-      id: "5",
+      id: "6",
       text: "Node.js",
       logo: node,
     },
     {
-      id: "6",
+      id: "7",
       text: "Git",
       logo: git,
     },
     {
-      id: "7",
+      id: "8",
       text: "Express.js",
       logo: express,
     },

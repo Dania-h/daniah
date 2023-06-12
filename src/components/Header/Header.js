@@ -13,7 +13,9 @@ function Header() {
           <HashLink smooth to="/#skills">
             <li className="header__li">Skills</li>
           </HashLink>
-          <li className="header__li">Projects</li>
+          <HashLink smooth to="/#projects">
+            <li className="header__li">Projects</li>
+          </HashLink>
         </ul>
       </nav>
     </header>
