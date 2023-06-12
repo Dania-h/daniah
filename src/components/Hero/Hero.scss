@@ -9,7 +9,7 @@
     align-items: center;
 
     &__div {
-        margin: 1rem;
+        margin: 1rem 0;
         order: 2;
     }
 
@@ -23,11 +23,12 @@
         color: $verdigris;
         font-size: 1rem;
         font-weight: 400;
-        margin: 1rem;
+        margin: 1rem 0;
+        letter-spacing: 4px;    
     }
 
     &__text {
-        font-size: .8125rem;
+        font-size: 1rem;
     }
 
     &__portrait {
