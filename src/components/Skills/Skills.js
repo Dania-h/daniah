@@ -54,7 +54,7 @@ function Skills() {
           return (
             <div className="skills__card" key={skill.id}>
               <img
-                className="skills__logos"
+                className="skills__card--logos"
                 src={skill.logo}
                 alt={skill.text}
               />
