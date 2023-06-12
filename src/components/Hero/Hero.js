@@ -1,5 +1,5 @@
 import "./Hero.scss";
-import portrait from "../../assets/images/IMG_9986-bw.png";
+import portrait from "../../assets/images/IMG_9986-small.jpg";
 import scroll from "../../assets/icons/scroll-down.svg";
 import { HashLink } from "react-router-hash-link";
 
