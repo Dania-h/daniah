@@ -1,7 +1,11 @@
 import "./Skills.scss";
 import reactLogo from "../../assets/icons/react-2.svg";
 import html from "../../assets/icons/w3_html5-icon.svg";
-// import css from "../../assets/icons/result.svg";
+import css from "../../assets/icons/icons8-css-logo.svg";
+import javascript from "../../assets/icons/logo-javascript.svg";
+import node from "../../assets/icons/nodejs-icon.svg";
+import git from "../../assets/icons/Git-Icon-1788C.svg";
+import express from "../../assets/icons/expressjs-icon.svg";
 
 function Skills() {
   const skills = [
@@ -18,7 +22,27 @@ function Skills() {
     {
       id: "3",
       text: "CSS",
-    //   logo: css,
+      logo: css,
+    },
+    {
+      id: "4",
+      text: "Javascript",
+      logo: javascript,
+    },
+    {
+      id: "5",
+      text: "Node.js",
+      logo: node,
+    },
+    {
+      id: "6",
+      text: "Git",
+      logo: git,
+    },
+    {
+      id: "7",
+      text: "Express.js",
+      logo: express,
     },
   ];
 
