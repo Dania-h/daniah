@@ -37,12 +37,15 @@
         order: 1;
     }
 
+    & a {
+        order: 3;
+    }
+
     &__scroll {
         border: 1px solid $verdigris;
         border-radius: 50%;
         padding: .5rem .5rem 0 .5rem;
         margin: 1rem;
-        order: 3;
         animation: slideDown infinite 2.5s ease-in-out;
 
         &--arrow {

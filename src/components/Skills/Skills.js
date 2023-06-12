@@ -47,7 +47,7 @@ function Skills() {
   ];
 
   return (
-    <section className="skills">
+    <section id="skills" className="skills">
       <h2 className="skills__header">SKILLS</h2>
       <div className="skills__cards">
         {skills.map((skill) => {

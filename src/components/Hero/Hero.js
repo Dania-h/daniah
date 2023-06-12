@@ -1,6 +1,7 @@
 import "./Hero.scss";
 import portrait from "../../assets/images/IMG_9986-bw.png";
 import scroll from "../../assets/icons/scroll-down.svg";
+import { HashLink } from "react-router-hash-link";
 
 function Hero() {
   return (
@@ -11,9 +12,11 @@ function Hero() {
         <p className="hero__text">Curious, creative, detailed</p>
       </div>
       <img className="hero__portrait" src={portrait} alt="portrait of Dania" />
-      <div className="hero__scroll">
-        <img className="hero__scroll--arrow" src={scroll} alt="scroll down" />
-      </div>
+      <HashLink smooth to="/#skills">
+        <div className="hero__scroll">
+          <img className="hero__scroll--arrow" src={scroll} alt="scroll down" />
+        </div>
+      </HashLink>
     </article>
   );
 }
