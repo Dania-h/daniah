@@ -1,4 +1,5 @@
 import "./Projects.scss";
+import skills from "../../data/skills";
 import jadesmart from "../../assets/images/Screenshot-jade.png";
 
 function Projects() {
@@ -18,6 +19,17 @@ function Projects() {
             financial education through brief and interactive lessons, making
             financial literacy more accessible for the average person.
           </p>
+          <div>
+            {skills.slice(0, 5).map((skill) => {
+              return (
+                <img
+                  className="projects__card--icons"
+                  src={skill.logo}
+                  alt={skill.text}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>
