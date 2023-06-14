@@ -9,7 +9,7 @@ function Projects() {
       <h2 className="projects__header">PROJECTS</h2>
       {projects.map((project) => {
         return (
-          <div className="projects__card">
+          <div className="projects__card" key={project.id}>
             <img
               className="projects__card--image"
               src={project.image}
@@ -18,8 +18,10 @@ function Projects() {
             <div className="projects__card--text-box">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <div>
-                <p>{project.skills}</p>
+              <div className="projects__card--skills">
+                {project.skills.map(skill => {
+                   return <p>{skill}</p>;
+                })}
               </div>
             </div>
             <div className="projects__card--buttons">

@@ -33,25 +33,26 @@
       }
     }
 
-    &--icons {
-      height: 1.5rem;
-      margin: 1rem 0.5rem;
+    &--skills {
+        display: flex;
+        flex-wrap: wrap;
+
+        & p {
+            background-color: $verdigris;
+            margin: 1rem 0.5rem 0 0;
+            padding: 0.5rem;
+            border-radius: 20px;
+            font-size: .8125rem;
+        }
     }
 
     &--buttons {
       display: flex;
-      color: #fff;
 
       & button {
         background-color: transparent;
-        color: #fff;
         border: none;
-        border-radius: 20px;
-        font-size: 0.8125rem;
         margin: 1rem 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         transition: all 0.2s;
         cursor: pointer;
 
