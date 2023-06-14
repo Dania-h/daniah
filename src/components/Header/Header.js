@@ -9,13 +9,13 @@ function Header() {
       </div>
       <nav>
         <ul className="header__ul">
-          <li className="header__li">About</li>
           <HashLink smooth to="/#skills">
             <li className="header__li">Skills</li>
           </HashLink>
           <HashLink smooth to="/#projects">
             <li className="header__li">Projects</li>
           </HashLink>
+          <li className="header__li">Contact</li>
         </ul>
       </nav>
     </header>

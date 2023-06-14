@@ -1,6 +1,8 @@
 import "./Projects.scss";
 import skills from "../../data/skills";
 import jadesmart from "../../assets/images/Screenshot-jade.png";
+import github from "../../assets/icons/iconmonstr-github-1.svg";
+import website from "../../assets/icons/tablet-and-laptop.svg";
 
 function Projects() {
   return (
@@ -30,6 +32,16 @@ function Projects() {
               );
             })}
           </div>
+        </div>
+        <div className="projects__card--buttons">
+          <button>
+            <img src={github} alt="github" />
+            GITHUB
+          </button>
+          <button>
+            <img src={website} alt="a phone and laptop" />
+            WEBSITE
+          </button>
         </div>
       </div>
     </section>
