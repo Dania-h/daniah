@@ -1,11 +1,8 @@
 @use '../../styles/variables' as *;
+@use "../../styles/mixins" as *;
 
 .skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem 0;
-    padding: 1rem;
+    @include section-setup-mobile;
 
     &__header {
         font-weight: 300;

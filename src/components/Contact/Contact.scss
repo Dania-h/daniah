@@ -1,0 +1,9 @@
+@use "../../styles/mixins" as *;
+
+.contact {
+    @include section-setup-mobile;
+
+    &__header {
+        @include section-header;
+    }
+}
