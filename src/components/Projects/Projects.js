@@ -7,11 +7,12 @@ function Projects() {
   return (
     <section id="projects" className="projects">
       <h2 className="projects__header">PROJECTS</h2>
+
       {projects.map((project) => {
         return (
           <div className="projects__card" key={project.id}>
             <img
-              className="projects__card--image"
+              className={`projects__card--image ${project.title === "COMING SOON..." ? "blur" : "" }`}
               src={project.image}
               alt={project.title}
             />
@@ -25,20 +26,21 @@ function Projects() {
               </div>
             </div>
             <div className="projects__card--buttons">
-              <a href={project.github}>
+              <a className={project.github ? "" : "is-hidden"} href={project.github}>
                 <button>
-                  <img src={github} id="github" alt="github" />
+                  <img src={github} alt="github" />
                 </button>
               </a>
-              <a href={project.website}>
+              <a className={project.website ? "" : "is-hidden"} href={project.website}>
                 <button>
-                  <img src={website} id="website" alt="a phone and laptop" />
+                  <img src={website} alt="a phone and laptop" />
                 </button>
               </a>
             </div>
           </div>
         );
       })}
+
     </section>
   );
 }

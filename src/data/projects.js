@@ -5,7 +5,7 @@ const projects = [
   {
     id: "1",
     image: jadesmart,
-    title: "JadeSmart",
+    title: "JADESMART",
     description:
       "Jadesmart is a web app that provides focused and beginner friendly financial education through brief and interactive lessons, making financial literacy more accessible for the average person.",
     skills: ["React", "HTML", "CSS", "SASS", "Javascript"],
@@ -15,7 +15,7 @@ const projects = [
   {
     id: "2",
     image: habit,
-    title: "Coming soon...",
+    title: "COMING SOON...",
     description:
       "",
     skills: [],

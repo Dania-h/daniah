@@ -30,6 +30,7 @@
         font-size: 1.5rem;
         font-weight: 300;
         color: $verdigris;
+        letter-spacing: 4px;
       }
     }
 
@@ -72,4 +73,8 @@
 
 .is-hidden {
     display: none;
+}
+
+.blur {
+    filter: blur(5px);
 }
