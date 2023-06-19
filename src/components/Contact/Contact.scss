@@ -1,9 +1,56 @@
 @use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
 
 .contact {
     @include section-setup-mobile;
+    padding: 0 1rem;
 
     &__header {
         @include section-header;
+        text-align: center;
+    }
+
+    p {
+        margin: 1rem 0;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+        &--input {
+            background-color: transparent;
+            color: #FFF;
+            border: none;
+            border-bottom: 1px solid $verdigris;
+            padding: 0.5rem;
+            margin: 1rem 0;
+            position: relative;
+            transition: all .2s ease-in;
+
+            &:focus {
+                outline: none;
+                box-shadow: 0 0 6px $mint;
+                border: 1px solid $verdigris;
+                border-radius: 20px;
+            }
+        }
+
+        &--submit {
+            background-color: $verdigris;
+            font-weight: 500;
+            margin: 1rem 0;
+            padding: 0.5rem;
+            color: #FFF;
+            border: none;
+            border-radius: 20px;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                background-color: $mint;
+                color: $gray-black;
+            }
+        }
     }
 }
