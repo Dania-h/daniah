@@ -31,7 +31,7 @@ function Contact() {
   };
 
   return (
-    <section className="contact">
+    <section id="contact" className="contact">
       <div className="contact__text">
         <h2 className="contact__header">CONTACT ME</h2>
         <p>
