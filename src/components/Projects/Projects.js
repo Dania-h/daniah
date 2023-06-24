@@ -26,12 +26,12 @@ function Projects() {
               </div>
             </div>
             <div className="projects__card--buttons">
-              <a className={project.github ? "" : "is-hidden"} href={project.github} target="_blank">
+              <a className={project.github ? "" : "is-hidden"} href={project.github} target="_blank" rel="noreferrer">
                 <button>
                   <img src={github} alt="github" />
                 </button>
               </a>
-              <a className={project.website ? "" : "is-hidden"} href={project.website} target="_blank">
+              <a className={project.website ? "" : "is-hidden"} href={project.website} target="_blank" rel="noreferrer">
                 <button>
                   <img src={website} alt="a phone and laptop" />
                 </button>

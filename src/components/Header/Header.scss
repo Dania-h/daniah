@@ -1,14 +1,73 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
 .header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: $gray-black;
+  width: 100%;
+  z-index: 1;
+
+  & a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  &__ul {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    padding: 1rem;
 
-    & a {
-        color: #FFFFFF;
-    }
+    @media (max-width: $tablet-breakpoint) {
+      background-color: rgba($color: $gunmetal, $alpha: 0.1);
+      backdrop-filter: blur(8px);
+      position: fixed;
+      inset: 0 0 0 20%;
+      flex-direction: column;
+      font-size: 2.25rem;
+      font-weight: 300;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
 
-    &__li {
-        display: inline-flex;
-        margin: 0 1rem;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-out;
     }
+  }
+
+  &__li {
+    @include tablet {
+      margin-inline-end: 1rem;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: url("../../assets/icons/menu_FILL0_wght400_GRAD0_opsz48.svg");
+    background-size: contain;
+    width: 2rem;
+    aspect-ratio: 1;
+    border: none;
+
+    @include tablet {
+        display: none;
+    }
+  }
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.open-menu {
+    transform: translateX(0%);
+    transition: transform 0.3s ease-out;
 }
