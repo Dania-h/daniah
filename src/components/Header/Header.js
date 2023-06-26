@@ -1,4 +1,5 @@
 import "./Header.scss";
+import logo from "../../assets/images/Dania-logo.png";
 import { useState } from "react";
 import { HashLink } from "react-router-hash-link";
 
@@ -8,7 +9,7 @@ function Header() {
   return (
     <header className="header">
       <div>
-        <h2>DH</h2>
+        <img className="header__logo" src={logo} alt="Dania's blue circle logo" />
       </div>
       <nav>
         <ul id="navigation" className={`header__ul ${ menuOpen ? "open-menu" : ""}`}>

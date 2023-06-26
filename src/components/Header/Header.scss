@@ -9,6 +9,11 @@
   background-color: $gray-black;
   width: 100%;
   z-index: 1;
+  padding: 1rem;
+
+  &__logo {
+    height: 3rem;
+  }
 
   & a {
     color: #ffffff;
@@ -18,8 +23,9 @@
   &__ul {
     list-style: none;
     display: flex;
+    align-items: center;
 
-    @media (max-width: $tablet-breakpoint) {
+    @media (max-width: 767px) {
       background-color: rgba($color: $gunmetal, $alpha: 0.1);
       backdrop-filter: blur(8px);
       position: fixed;
@@ -38,13 +44,13 @@
 
   &__li {
     @include tablet {
-      margin-inline-end: 1rem;
+      margin-inline-end: 2rem;
     }
   }
 
   &__button {
     position: absolute;
-    top: 1rem;
+    top: 1.5rem;
     right: 1rem;
     background: url("../../assets/icons/menu_FILL0_wght400_GRAD0_opsz48.svg");
     background-size: contain;
