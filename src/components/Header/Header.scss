@@ -4,12 +4,17 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: sticky;
   top: 0;
   background-color: $gray-black;
   width: 100%;
   z-index: 1;
   padding: 1rem;
+
+  @include tablet {
+    padding: 1rem 2.25rem;
+  }
 
   &__logo {
     height: 3rem;
@@ -24,6 +29,7 @@
     list-style: none;
     display: flex;
     align-items: center;
+    font-size: 1.125rem;
 
     @media (max-width: 767px) {
       background-color: rgba($color: $gunmetal, $alpha: 0.1);
@@ -44,7 +50,7 @@
 
   &__li {
     @include tablet {
-      margin-inline-end: 2rem;
+      margin-inline-start: 2rem;
     }
   }
 
