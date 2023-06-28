@@ -8,14 +8,14 @@ const projects = [
     title: "JADESMART",
     description:
       "Jadesmart is a web app that provides focused and beginner friendly financial education through brief and interactive lessons, making financial literacy more accessible for the average person.",
-    skills: ["React", "HTML", "CSS", "SASS", "Javascript"],
+    skills: ["React", "HTML", "CSS", "SASS", "Javascript", "Finnhub API", "NPM"],
     github: "https://github.com/Dania-h/JadeSmart",
     website: "http://jadesmart-miami.web.app/",
   },
   {
     id: "2",
     image: habit,
-    title: "COMING SOON...",
+    title: " MORE COMING SOON...",
     description:
       "",
     skills: [],

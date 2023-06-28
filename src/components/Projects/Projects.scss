@@ -6,6 +6,11 @@
 
   &__header {
     @include section-header;
+
+    @include tablet {
+      font-size: 2.25rem;
+      margin-bottom: 1.5rem;
+    }
   }
 
   &__card {
@@ -14,13 +19,26 @@
     width: 100%;
     background-color: $gunmetal;
 
+    @include tablet {
+      width: 80%;
+      border-radius: 20px;
+    }
+
     &--image {
       width: 100%;
+
+      @include tablet {
+        height: 35em;
+      }
     }
 
     &--text-box {
       padding: 1rem;
       font-weight: 300;
+
+      @include tablet {
+        padding: 1rem 2.25rem;
+      }
 
       & h3 {
         margin-bottom: 1rem;
@@ -28,6 +46,10 @@
         font-weight: 300;
         color: $verdigris;
         letter-spacing: 4px;
+      }
+
+      & p {
+        font-size: 1.125rem;
       }
     }
 
@@ -41,11 +63,17 @@
             padding: 0.5rem;
             border-radius: 20px;
             font-size: .8125rem;
+
+            @include tablet {
+              font-size: .875rem;
+            }
         }
     }
 
     &--buttons {
-      display: flex;
+      @include tablet {
+        padding: 0 1.5rem;
+      }
 
       & button {
         background-color: transparent;
