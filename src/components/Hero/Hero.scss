@@ -51,19 +51,24 @@
     }
 
     &__text {
-        font-size: 1.125rem;
+        font-size: 1rem;
         font-weight: 300;
+
+        @include tablet {
+            font-size: 1.125rem;
+        }
     }
 
     &__portrait {
         border-radius: 50%;
-        width: 15em;
+        width: 12em;
         aspect-ratio: 1;
         margin: 1rem;
         order: 1;
 
         @include tablet {
             order: 2;
+            width: 15em;
         }
     }
 

@@ -7,6 +7,11 @@
     &__header {
         font-weight: 300;
         letter-spacing: .125rem;
+
+        @include tablet {
+            font-size: 2.25rem;
+            margin-bottom: 1.5rem;
+        }
     }
 
     &__cards {
@@ -26,6 +31,10 @@
         border-radius: 20px;
         width: 35%;
         transition: all .2s ease-in-out;
+
+        @include tablet {
+            font-size: 1.125rem;
+        }
 
         &--logos {
             height: 3rem;
