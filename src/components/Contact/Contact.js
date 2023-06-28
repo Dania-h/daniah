@@ -45,7 +45,9 @@ function Contact() {
         <input className="contact__form--input" type="email" name="user_email" required />
         <label className="contact__form--label">Message</label>
         <textarea className="contact__form--input" name="message" required />
-        <input className="contact__form--submit" type="submit" value="SEND" />
+        <div className="contact__form--submit-div">
+          <input className="contact__form--submit" type="submit" value="SEND" />
+        </div>
       </form>
     </section>
   );

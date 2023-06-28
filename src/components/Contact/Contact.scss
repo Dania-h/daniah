@@ -5,9 +5,27 @@
     @include section-setup-mobile;
     padding: 0 1rem;
 
+    @include tablet {
+        flex-direction: row;
+        align-items: flex-start;
+        font-size: 1.125rem;
+        padding: 0 2.25rem;
+    }
+
+    &__text {
+        width: 70%;
+        padding-right: 2.25rem;
+    }
+
     &__header {
         @include section-header;
         text-align: center;
+
+        @include tablet {
+            font-size: 2.25rem;
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
     }
 
     p {
@@ -36,15 +54,28 @@
             }
         }
 
+        &--submit-div {
+            @include tablet {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+
         &--submit {
             background-color: $verdigris;
             font-weight: 500;
             margin: 1rem 0;
-            padding: 0.5rem;
+            padding: 1rem;
+            width: 100%;
             color: #FFF;
             border: none;
             border-radius: 20px;
             transition: all .2s ease-in-out;
+
+            @include tablet {
+                font-size: .875rem;
+                width: 50%;
+            }
 
             &:hover {
                 background-color: $mint;
