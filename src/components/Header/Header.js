@@ -13,13 +13,13 @@ function Header() {
       </div>
       <nav>
         <ul id="navigation" className={`header__ul ${ menuOpen ? "open-menu" : ""}`}>
-          <HashLink smooth to="/#skills">
+          <HashLink smooth to="/#skills" onClick={()=> setMenuOpen(false)}>
             <li className="header__li">SKILLS</li>
           </HashLink>
-          <HashLink smooth to="/#projects">
+          <HashLink smooth to="/#projects" onClick={()=> setMenuOpen(false)}>
             <li className="header__li">PROJECTS</li>
           </HashLink>
-          <HashLink smooth to="/#contact">
+          <HashLink smooth to="/#contact" onClick={()=> setMenuOpen(false)}>
             <li className="header__li">CONTACT</li>
           </HashLink>
         </ul>

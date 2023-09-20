@@ -7,13 +7,15 @@
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: $gray-black;
-  width: 100%;
   z-index: 1;
   padding: 1rem;
 
   @include tablet {
-    padding: 1rem 2.25rem;
+    padding: 1rem 2rem;
+  }
+
+  @include desktop {
+    padding: 2rem 5rem;
   }
 
   &__logo {
@@ -28,7 +30,6 @@
   &__ul {
     list-style: none;
     display: flex;
-    align-items: center;
     font-size: 1.125rem;
 
     @media (max-width: 767px) {
@@ -39,7 +40,6 @@
       flex-direction: column;
       font-size: 2.25rem;
       font-weight: 300;
-      align-items: center;
       justify-content: center;
       gap: 3rem;
 
